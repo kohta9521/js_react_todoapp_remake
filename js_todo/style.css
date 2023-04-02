@@ -25,8 +25,8 @@ li {
 }
 
 .input-area {
-  background-color: #c1ffff;
-  width: 400px;
+  background-color: #00cbff;
+  width: 500px;
   height: 30px;
   padding: 8px;
   margin: 8px;
@@ -34,8 +34,8 @@ li {
 }
 
 .imcomplete-area {
-  background-color: #c6ffe2;
-  width: 400px;
+  background-color: #00ff99;
+  width: 500px;
   min-height: 200px;
   padding: 8px;
   margin: 8px;
@@ -43,8 +43,8 @@ li {
 }
 
 .complete-area {
-  background-color: #ffffe0;
-  width: 400px;
+  background-color: #ffff00;
+  width: 500px;
   min-height: 200px;
   padding: 8px;
   margin: 8px;
