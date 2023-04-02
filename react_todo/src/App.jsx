@@ -2,7 +2,8 @@ import React, {useState} from "react";
 import "./style.css";
 
 export const App = () => {
-  const [imcompleteTodo, setImcompleteTodos] = useState([
+  const [todoText, setTodoText] = useState('')
+  const [imcompleteTodos, setImcompleteTodos] = useState([
     'サンプルです１',
     'サンプルです２'
   ]);
@@ -11,18 +12,28 @@ export const App = () => {
     'サンプルです３'
   ])
 
+  const onChangeTodoText = (e) => {
+    setTodoText(e.target.value);
+  }
+
+  const onClickAdd = () => {
+    if (todoText === '') return;
+    const newTodos = [...imcompleteTodos, todoText];
+    setImcompleteTodos(newTodos);
+    setTodoText("");
+  }
 
   return (
     <>
       <div className="input-area">
-        <input placeholder="TODOを入力" />
-        <button>追加</button>
+        <input placeholder="TODOを入力" value={todoText} onChange={onChangeTodoText} />
+        <button onClick={onClickAdd}>追加</button>
       </div>
 
       <div className="imcomplete-area">
         <p className="title">未完了のTODO</p>
         <ul>
-          {imcompleteTodo.map((todo) => {
+          {imcompleteTodos.map((todo) => {
             return (
               <div key={todo} className="list-row">
               <li>{todo}</li>
