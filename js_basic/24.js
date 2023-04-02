@@ -18,3 +18,26 @@ const [num1, num2, ...arr3] = arr2;
 console.log(num1);
 console.log(num2);
 console.log(arr3);
+
+// 配列のコピー・結合
+const arr4 = [10, 20];
+const arr5 = [30, 40];
+
+// const arr6 = [...arr4];
+// console.log(arr6);
+// console.log(arr4);
+
+// const arr7 = [...arr4, ...arr5];
+// console.log(arr7);
+
+// const arr8 = arr4;
+// console.log(arr8);
+// arr8[0] = 100;
+// console.log(arr8);
+// console.log(arr4);
+
+const arr8 = [...arr4];
+console.log(arr8);
+arr8[0] = 100;
+console.log(arr8);
+console.log(arr4);
