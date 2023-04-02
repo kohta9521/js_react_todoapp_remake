@@ -14,3 +14,12 @@ const func3 = (string) => {
 };
 
 console.log(func3("samplecode"));
+
+// アロー関数の省略記法
+const func5 = (str) => str;
+console.log(func5("samplecode"));
+
+const func6 = (num1, num2) => {
+  return num1 + num2;
+};
+console.log(func6(10, 20));
