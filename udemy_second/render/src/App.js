@@ -1,9 +1,8 @@
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import "./App.css";
 import { ChildArea } from "./ChildArea";
 
 function App() {
-  const [count, setCount] = useState(0);
   const [text, setText] = useState("");
   const [open, setOpen] = useState(false);
 
@@ -15,9 +14,9 @@ function App() {
     setOpen(!open);
   };
 
-  // const countUp = () => {
-  //   setCount(count + 1);
-  // };
+  const onClickClose = useCallback(() => {
+    setOpen(false), [];
+  });
 
   return (
     <div className="App">
@@ -25,7 +24,7 @@ function App() {
       <br />
       <br />
       <button onClick={onClickOpen}>表示</button>
-      <ChildArea open={open} />
+      <ChildArea open={open} onClickClose={onClickClose} />
     </div>
   );
 }
