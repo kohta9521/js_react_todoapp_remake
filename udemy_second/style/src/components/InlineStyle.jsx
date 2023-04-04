@@ -1,6 +1,17 @@
 export const InlineStyle = () => {
-  const containerStyle = {};
-  const titleStyle = {};
+  const containerStyle = {
+    border: "solid 2px black",
+    borderRadius: "20px",
+    padding: "8px",
+    margin: "8px",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center"
+  };
+  const titleStyle = {
+    margin: 0,
+    color: "blue",
+  };
   const buttonStyle = {};
   return (
     <div style={containerStyle}>
