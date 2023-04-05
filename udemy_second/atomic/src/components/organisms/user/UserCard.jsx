@@ -1,7 +1,7 @@
 export const UserCard = () => {
   return (
     <div>
-      <img src="" alt="ユーザー画像" />
+      <img src="https://picsum.photos/200/300" alt="ユーザー画像" />
       <p>nama</p>
       <dl>
         <dt>mail</dt>
