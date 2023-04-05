@@ -1,18 +1,34 @@
-export const UserCard = () => {
+import styled from "styled-components"
+import { Card } from "../../atoms/card/Card";
+
+export const UserCard = (props) => {
+  const { user } = props;
   return (
-    <div>
-      <img src="https://picsum.photos/200/300" alt="ユーザー画像" />
-      <p>nama</p>
-      <dl>
+    <Card>
+      <img height={160} width={160} src={user.image} alt={user.name} />
+      <p>{user.name}</p>
+      <SDl>
         <dt>mail</dt>
-        <dd>5252525@gmail</dd>
+        <dd>{user.email}</dd>
         <dt>TEL</dt>
-        <dd>080627277272</dd>
+        <dd>{user.phone}</dd>
         <dt>company</dt>
-        <dd>lesson inc.</dd>
+        <dd>{user.company.name}</dd>
         <dt>website</dt>
-        <dd>lssususu.com</dd>
-      </dl>
-    </div>
+        <dd>{user.website}</dd>
+      </SDl>  
+    </Card>
   )
 }
+
+const SDl = styled.dl`
+  text-align: left;
+  margin-bottom: 0;
+  dt {
+    float: left;
+  }
+  dd {
+    padding-left: 32px;
+    padding-bottom: 8px;
+  }
+`;
