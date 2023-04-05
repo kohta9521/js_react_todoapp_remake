@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
+import { Practice1 } from './practices/Practice1';
 
 function App() {
   return (
     <div className="App">
-      hello typescript
+      <Practice1 />
     </div>
   );
 }
