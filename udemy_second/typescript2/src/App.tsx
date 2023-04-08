@@ -4,6 +4,13 @@ import axios from 'axios';
 
 import {Todo } from './Todo';
 
+type TodoType = {
+  userId: number;
+  id: number;
+  title: string;
+  completed: boolean;
+};
+
 function App() {
   const [ todos, setTodos ] = useState<any>([]);
 
