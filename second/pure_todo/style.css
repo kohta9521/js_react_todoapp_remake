@@ -3,15 +3,65 @@ body {
   padding: 0;
   margin: 0;
 }
-
+a {
+  text-decotation: none;
+}
+ul {
+  list-style: none;
+}
+li {
+  margin-right: 8px;
+}
+input {
+  border-radius: 16px;
+  border: none;
+  padding: 6px 16px;
+  outline: none;
+}
+button {
+  border-radius: 16px;
+  border: none;
+  padding: 4px 16px;
+}
+button:hover {
+  background-color: #ff7fff;
+  color: white;
+  cursor: pointer;
+}
 .input-area {
+  width: 400px;
+  hegiht: 20px;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
   background-color: #c1ffff;
 }
 
 .imcomplete-area {
+  width: 400px;
+  min-hegiht: 200px;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
   background-color: #c6ffe2;
 }
 
 .complete-area {
+  width: 400px;
+  min-height: 200px;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
   background-color: #ffffe0;
+}
+.title {
+  text-align: center;
+  margin-top: 0;
+  font-weight: bold;
+  color: #666;
+}
+.list-row {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
 }
