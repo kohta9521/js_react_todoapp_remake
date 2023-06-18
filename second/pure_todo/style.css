@@ -1,0 +1,17 @@
+body {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.input-area {
+  background-color: #c1ffff;
+}
+
+.imcomplete-area {
+  background-color: #c6ffe2;
+}
+
+.complete-area {
+  background-color: #ffffe0;
+}
